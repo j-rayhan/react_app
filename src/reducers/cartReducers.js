@@ -50,7 +50,7 @@ export function grantTotal(payloadArr) {
 		return qty.quantity;
 	}).reduce(function(a,b){
 		return a+b;
-	})
+	},0)
 
 	return	{amount: grantTotal.toFixed(2), qty: totalQty}
 }

@@ -25,6 +25,8 @@ const store = createStore(reducers, middleware);
 // IMPORT PAGES
 import BooksList from './components/pages/booksList';
 import BookForm from './components/pages/bookForm';
+import About from './components/pages/about';
+import Contact from './components/pages/contact';
 import Cart from './components/pages/cart';
 
 import Main from './main';
@@ -34,6 +36,8 @@ const Routes=(
 				<Router history={browserHistory}>
 					<Route path="/" component={Main}>
 						<IndexRoute component={BooksList} />
+						<Route path="/about" component={About} />
+						<Route path="/contact" component={Contact} />
 						<Route path="/admin" component={BookForm} />
 						<Route path="/cart" component={Cart} />
 					</Route>

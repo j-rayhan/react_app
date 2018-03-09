@@ -14,7 +14,9 @@ class Main extends Component {
         return (
             <div>
             	<Menu cartItems={this.props.totalQty}/>
+              <div className="container">
             	{this.props.children}
+            </div>
             	<Footer />
             </div>
         );

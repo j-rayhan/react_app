@@ -72,7 +72,7 @@ class BookForm extends Component {
 				}, this)
         return (
             <Well>
-							<Row>
+							<Row style={{marginTop: "50px"}}>
 								<Col xs={12} sm={6}>
 									<Panel>
 										<InputGroup>

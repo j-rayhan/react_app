@@ -84,7 +84,7 @@ class Cart extends Component{
 					)
 			}, this);
 			return(
-				<Panel header="Cart" bsStyle="primary">
+				<Panel header="Cart" bsStyle="primary"  style={{marginTop: "70px"}}>
 				{cartItems}
 				<Row>
 					<Col xs={12}>
